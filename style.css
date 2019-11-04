@@ -1,0 +1,280 @@
+html, body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial;
+        overflow-y:auto;
+        overflow-x:auto;
+        outline: none;
+        width:100%;
+        min-width:1800px;
+		}
+.backgrounda{
+    height:950px;
+    background-size:cover;
+    background-attachment:fixed;
+    background-image:url(resources/inflatable.png);/*, url(resources/sports2.jpg);*/
+	position:relative;
+	overflow:hidden;
+    filter:brightness(90%);
+}
+.backgroundb{
+    height:1500px;
+    background-size:cover;
+    background-attachment:fixed;
+    background-image:url(resources/sports.jpg);
+	position:relative;
+	overflow:hidden;
+    z-index:0;
+    filter:brightness(90%);
+}
+h1{
+	color:black;
+	position:absolute;
+    text-align:center;
+	font-size:100px;
+	top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.navigator{
+	z-index:2;
+	position:fixed;
+	top:300pt;
+	left:10px;
+    padding-right:5px;
+}
+
+.navigator li{
+    font-size:30px;
+    font-weight:600;
+	margin:10px 0;
+}
+.navigator a{
+	color:black;
+    opacity:0.5;
+    transition:0.3s;
+}
+.navigator a:hover{
+    color:black;
+    opacity:1;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.tabbar{
+    overflow: hidden;
+    background-color: #1a1a1a;
+    padding: 15px;
+}
+.socialIcon {
+    float:right;
+    position:relative;
+    right:150pt;
+    width:40px;
+    height:40px;
+}
+.socialIcon:hover{
+    transition:0.3s;
+    filter:brightness(70%);
+}
+.tabItem a{
+    color: black;
+    float: left;
+    padding: 4px 12px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #e6e6e6;
+    border-color: #d9d9d9;
+    border-right: solid;
+    position: relative;
+    left: 280pt;
+    top: 7pt;
+    transition:0.3s;
+}
+.tabbar .popup {
+    float: left;
+	color:white;
+    position: relative;
+	left:16%;
+    font-weight: bold;
+    text-align: center;
+    bottom: 2px;
+}
+
+.tabbar a:hover {
+    background-color: dimgrey;
+}
+.dropdown{
+    display:block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    padding: 4px 12px;
+    z-index: 1;
+    transition:0.3s;
+    display:none;
+    left:290pt; 
+    top:18pt;
+    list-style:none;
+    text-align:center;
+}
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+.bookNow a {
+    float: right;
+    padding: 4px 12px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #49a9dd;
+    color: white;
+    position: relative;
+    top: 9px;
+    right: 300pt;
+    transition:0.3s;
+}
+.LoggedIn {
+	float: right;
+    padding: 4px 12px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #49a9dd;
+    color: white;
+    position: relative;
+    top: 9px;
+    right: 10pt;
+    transition:0.3s;
+
+}
+.signupbtn{
+	top:100px;
+	width:350px;
+	height:250px;
+	float:right;
+	right:10%;
+
+}
+.signupbtn:hover{
+    transition:0.3s;
+    filter:hue-rotate(22.5deg);
+}
+.bookNow a:hover {
+    background-color: #295e7a;
+}
+.infobar{
+    background-color: #65BDD1;
+	padding-bottom:20px;
+    position:absolute;
+    top: 1000px;
+    height:390pt;
+	width:100%;
+    z-index:1;
+    *zoom:1;
+    min-width:1800px;
+}
+/*
+.infobar:before,
+.infobar:after{
+    content:"";
+    display:table;
+}
+.infobar:after{
+    clear:both;
+}
+    */
+.infobar h2{
+    text-align:center;
+    color:black;
+	font-size:40px;
+    margin-bottom:40px;
+    position:static;
+
+}
+
+.infobar img{
+    transform: translate(12%,0%);
+    display:inline-block;
+    width:200px;
+    height:200px;
+	/*float:left;
+    position:relative;
+    display:inline-block;
+    margin-left:auto;
+	width:200px;
+	height:200px;
+    top:60pt;
+    left: 28%;
+	margin-right:10%;
+    transform: translate(-40%, -50%);*/
+}
+.infogroup{
+    transform:translate(70%,0%);
+    float:left;
+    margin-left:10%;
+}
+.infobar p{
+    width:250px;
+    height:250px;
+    color:black;
+	font-weight:700;
+    text-align:center;   
+}
+.contactbar{
+    background-color: #65BDD1;
+	padding-bottom:60px;
+    position:absolute;
+    top: 2300px;
+    height:30%;
+	width:100%;
+    z-index:1;
+    min-width:1800px;
+}
+
+.contactbar h3{
+    text-align:center;
+    color:black;
+	font-size:40px;
+    margin-bottom:10px;
+}
+.contactbar p{
+    font-weight:700;
+    margin-left:450px;
+    margin-top:40px;
+    font-size:22px;
+}
+.contactbar img{
+    float:left;
+    transform:translate(100px,-10px)rotate(-10deg);
+}
+.register{
+    background-image:url(resources/RegisterForm.png);
+    position:fixed;
+    padding:50px;
+    width:400px;
+    height:500px;
+    left:32.5%;
+    top:10%;
+	z-index:10;
+}
+.register input[type="text"], select{
+    width:100%;
+    display:inline-block;
+
+}
+.register label {
+    margin-top:15px;
+    display:block;
+}
+
+.AdminForm label{
+	margin-top:15px;
+    display:block;
+}
+.AdminForm input, select{
+    width:30%;
+    display:block;
+
+}
